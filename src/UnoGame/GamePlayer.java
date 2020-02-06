@@ -5,13 +5,24 @@ package UnoGame;
  */
 public class GamePlayer {
 
-	/**
-	 * 
-	 * @param args the command line arguments
-	 */
 	public static void main(String[] args) {
-		// TODO - implement GamePlayer.main
-		throw new UnsupportedOperationException();
-	}
 
+		CardHand ch = new CardHand();
+
+                ch.generateHand();
+
+                for(Card c: ch.cards)
+
+                {
+
+                    System.out.println(c.getValue() + " of " + c.getSuit());
+
+                }
+
+               // System.out.println(ch.cards); show what happens when there is no toString()
+
+               
+
+
+        }
 }
